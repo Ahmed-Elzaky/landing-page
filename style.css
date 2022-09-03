@@ -8,19 +8,12 @@ body {
   background-color: #c9dae4;
 }
 
-.container {
-  /* max-width: 800px; */
-  min-width: 700px;
-  margin: auto;
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .section1 {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* align-items: center; */
   padding: 5px 100px;
 }
 
@@ -44,8 +37,6 @@ body {
 .section1 .header ul {
   display: flex;
   list-style-type: none;
-  /* justify-content: space-between; */
-  /* flex: 1; */
   column-gap: 10px;
 }
 
@@ -60,7 +51,9 @@ a:hover {
 .media {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 40px 0;
+  /* flex: 1; */
 }
 
 .media .content .hero-main {
@@ -68,17 +61,22 @@ a:hover {
   font-size: 48px;
   font-weight: extra-bold;
   flex: 1;
+  width: 205px;
 }
 
 .media .content .hero-secondary {
   color: #e5e7eb;
   font-size: 18px;
+  flex: 1;
+  width: 230px;
 }
 
 .media .image img {
   width: 200px;
   height: auto;
   border-radius: 10px;
+  margin: 10px;
+  flex: 1;
 }
 
 .media .content button {
@@ -108,13 +106,15 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding: 100px;
+  flex-wrap: wrap;
 }
 
 .section2 .projects .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* flex: 1; */
+  flex: 1;
+  margin: 10px;
 }
 
 .section2 .projects .project .image img {
@@ -183,5 +183,5 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 30px;
 }
